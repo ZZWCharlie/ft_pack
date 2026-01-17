@@ -1,0 +1,60 @@
+name: ftpack
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - setuptools
+  - wheel
+  - pip:
+      # 核心AI和ML包
+      - openai==1.86.0
+      - langchain==0.3.25
+      - langchain-community==0.3.25
+      - langchain-core==0.3.65
+      - langchain-openai==0.3.23
+      - langchain-text-splitters==0.3.8
+      
+      # 数据库连接
+      - neo4j==5.28.1
+      
+      # Web框架
+      - fastapi
+      - uvicorn
+      - python-multipart
+      
+      # 数据处理
+      - pandas==2.3.0
+      - numpy==2.0.2
+      - scipy==1.13.1
+      
+      # 图像和文档处理
+      - pillow==11.2.1
+      - opencv-python==4.11.0.86
+      - pymupdf==1.26.1
+      
+      # 验证和序列化
+      - pydantic==2.11.7
+      - pydantic-core==2.33.2
+      
+      # HTTP和异步
+      - requests==2.32.4
+      - httpx==0.28.1
+      - aiohttp==3.12.13
+      
+      # 工具包
+      - tqdm==4.67.1
+      - pyyaml==6.0.2
+      - click==8.1.8
+      - rich==14.0.0
+      - tenacity==9.1.2
+      - typing-extensions==4.14.0
+      
+      # NLP（可选）
+      - spacy==3.8.7
+      - nltk==3.9.1
+prefix: /home/lijie/miniconda3/envs/ftpack
